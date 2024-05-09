@@ -1,0 +1,79 @@
+var swiper = new Swiper(".swiperPartner", {
+  slidesPerView: 6,
+  spaceBetween: 20,
+  sliderPerGroup: 6,
+  loop: true,
+  centerSlide: "true",
+  grabCursor: "true",
+  // autoplay: {
+  //   delay: 1500,
+  //   disableOnInteraction: false,
+  // },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    350: {
+      slidesPerView: 1,
+    },
+    520: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1000: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 5,
+    },
+    1300: {
+      slidesPerView: 5,
+    },
+  },
+});
+
+var swiperWorks = new Swiper(".swiperWorks", {
+  slidesPerView: 6,
+  spaceBetween: 20,
+  sliderPerGroup: 6,
+  loop: true,
+  centerSlide: "true",
+  grabCursor: "true",
+  // autoplay: {
+  //   delay: 1500,
+  //   disableOnInteraction: false,
+  // },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    350: {
+      slidesPerView: 1,
+    },
+    520: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1000: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+    1300: {
+      slidesPerView: 3,
+    },
+  },
+});
