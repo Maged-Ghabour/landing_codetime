@@ -134,11 +134,23 @@
   width: 22.5rem;
 }
 
+@media (max-width: 768px) {
+  .hero a {
+    width: 18.5rem;
+  }
+}
+
 .hero a .fa-wordpress:before {
   font-size: 21px;
 }
 .hero a svg {
   margin: 0 0.2rem;
+}
+
+@media (max-width: 992px) {
+  .hero-img-box {
+    display: none;
+  }
 }
 /**************************/
 /* Partners IN SECTION */
@@ -501,6 +513,7 @@
   font-size: 1.6rem;
   font-family: var(--main-font);
   font-weight: bold;
+  text-align: right;
 }
 
 .faq__section .accordion-item {

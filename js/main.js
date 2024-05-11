@@ -84,7 +84,7 @@ var swiperClients = new Swiper(".swiperClients", {
   sliderPerGroup: 6,
   loop: true,
   centerSlide: "true",
-  grabCursor: "true",
+  // grabCursor: "true",
   // autoplay: {
   //   delay: 1500,
   //   disableOnInteraction: false,
