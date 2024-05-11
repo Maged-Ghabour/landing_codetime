@@ -499,6 +499,8 @@
 }
 .faq__section .accordion-header button {
   font-size: 1.6rem;
+  font-family: var(--main-font);
+  font-weight: bold;
 }
 
 .faq__section .accordion-item {
