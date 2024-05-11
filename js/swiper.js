@@ -15,8 +15,10 @@
     ? (module.exports = t())
     : "function" == typeof define && define.amd
     ? define(t)
-    : ((e = "undefined" != typeof globalThis ? globalThis : e || self).Swiper =
-        t());
+    : ((e =
+        "undefined" != typeof globalThis
+          ? globalThis
+          : e || self).Swiper = t());
 })(this, function () {
   "use strict";
   function e(e) {
@@ -3291,12 +3293,10 @@
   }
   function se(e, t) {
     return e.transformEl
-      ? t
-          .find(e.transformEl)
-          .css({
-            "backface-visibility": "hidden",
-            "-webkit-backface-visibility": "hidden",
-          })
+      ? t.find(e.transformEl).css({
+          "backface-visibility": "hidden",
+          "-webkit-backface-visibility": "hidden",
+        })
       : t;
   }
   function ae(e) {

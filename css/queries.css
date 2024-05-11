@@ -56,6 +56,9 @@
   .testimonials-container {
     padding: 9.6rem 3.2rem;
   }
+  .header .cta {
+    display: none;
+  }
 }
 
 /**************************/
@@ -155,6 +158,7 @@
 
     /* 3) Hide it from screen readers */
     visibility: hidden;
+    z-index: 999;
   }
 
   .nav-open .main-nav {

@@ -32,10 +32,11 @@
 .main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #333;
+  color: #102b6b;
   font-weight: 500;
   font-size: 1.4rem;
   transition: all 0.3s;
+  font-weight: 600;
 }
 
 .main-nav-link:hover,
@@ -98,7 +99,7 @@
 /**************************/
 
 .section-hero {
-  background: url("../img/landing_bg.png");
+  /* background: url("../img/landing_bg.png"); */
   padding: 4.8rem 0 9.6rem 0;
 }
 
@@ -121,9 +122,24 @@
 }
 
 .hero-img {
+  position: relative;
   width: 100%;
+  animation: up-and-down 5s linear infinite;
+}
+.hero a {
+  max-height: 5rem;
+  display: inline-flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 22.5rem;
 }
 
+.hero a .fa-wordpress:before {
+  font-size: 21px;
+}
+.hero a svg {
+  margin: 0 0.2rem;
+}
 /**************************/
 /* Partners IN SECTION */
 /**************************/
@@ -219,6 +235,11 @@
   border: 1px solid #e9f0ff;
   border-radius: 1rem 1rem 1rem 4rem;
   padding: 1.5rem;
+  align-self: flex-start;
+}
+
+.project_execution_box:nth-child(even) {
+  margin-top: 5rem;
 }
 .project_execution_box img {
   width: 60px;
@@ -237,6 +258,14 @@
   font-size: 1.4rem;
 }
 
+/***********************************/
+
+/*************************************/
+/* Section Salla */
+.section-salla .container {
+  background-color: #f5faff;
+  border-radius: 1rem;
+}
 /**************************/
 /* Our Works SECTION */
 /**************************/
@@ -284,59 +313,46 @@
 
 .pricing-plan {
   border-radius: 11px;
-
   width: 75%;
+  background-color: #e0f0fe;
+
+  border: 2px solid #bddefe;
+  padding: 3.6rem;
+  box-shadow: 0 4px 12px #2667ff4f;
 }
 
 .pricing-plan--starter {
-  background-color: #bddefe;
   justify-self: end;
-  border: 2px solid #bddefe;
-  padding: 4.6rem;
-  box-shadow: 0 4px 12px #2667ff4f;
 }
 
-.pricing-plan--complete {
-  background-color: #bddefe;
-  padding: 4.8rem;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 4px 12px #2667ff4f;
+.pricing-plan--ended {
+  justify-self: start;
 }
 
 .pricing-plan .list-item span {
   font-size: 1.6rem;
   color: #000;
-  font-weight: 600;
+  font-weight: 500;
+  position: relative;
+  padding-right: 1rem;
 }
 
-.pricing-plan--complete::after {
-  content: "Best value";
+.section-pricing .list .list-item span::before {
+  content: "";
   position: absolute;
-  top: 6%;
-  right: -18%;
-
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #333;
-  background-color: #ffd43b;
-  padding: 0.8rem 8rem;
-  transform: rotate(45deg);
+  background-image: url("../img/verify.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -20px;
+  width: 20px;
+  height: 20px;
 }
 
 .plan-header {
   text-align: center;
-  margin-bottom: 4.8rem;
-}
-
-.plan-name {
-  color: #cf711f;
-  font-weight: 600;
-  font-size: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.75;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2.8rem;
 }
 
 .plan-title {
@@ -393,21 +409,147 @@
 }
 
 /**************************/
+
+/***********************************************/
+/* our clients*/
+
+.our__clients {
+  background: #e6f4fe;
+  padding: 3rem 0;
+}
+.our__clients a {
+  text-decoration: none;
+}
+
+.our__clients .client__card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+  border-top: 5px solid #2667ff;
+  transition: all 0.3s;
+}
+
+.our__clients .client__card .client__header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.our__clients .client__card .client__header h6 {
+  font-size: 1.8rem;
+  color: #000;
+}
+
+.our__clients .client__card .client__header_content {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.our__clients .client__card .client__header p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.our__clients .client__card .client__body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.our__clients .client__card .client__body p {
+  color: #545454;
+  line-height: 1.7;
+  font-size: 1.4rem;
+  text-align: right;
+}
+.our__clients .client__card .client__body a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #2667ff;
+}
+
+.our__clients .client__card:hover {
+  background-color: #2667ff;
+  border-top: 5px solid #f79e0e;
+  color: #fff;
+}
+
+.our__clients .client__card:hover .client__header h6,
+.our__clients .client__card:hover .client__body p,
+.our__clients .client__card:hover .client__body a {
+  color: #fff;
+}
+
+.our__clients .client__card:hover .text-muted {
+  color: #ffffff63 !important;
+}
+/***********************************************/
+
+/************************************************/
+/***************** FAQ ***********************/
+
+.faq__section {
+  background: #fff;
+  padding: 5rem 0;
+}
+.faq__section .accordion-header button {
+  font-size: 1.6rem;
+}
+
+.faq__section .accordion-item {
+  margin: 2rem 0;
+  padding: 0.7rem;
+  border-radius: 9px;
+  border: 1px solid #e9f0ff;
+  background: #f9f9f9;
+}
+
+.faq__section .accordion-button {
+  background: inherit;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  margin-right: auto;
+  margin-left: unset;
+}
+
+.accordion-body {
+  font-size: 1.4rem;
+}
+
 /* FOOTER */
 /**************************/
 
 .footer {
   padding: 12.8rem 0;
   border-top: 1px solid #eee;
+  background-image: url(../img/Footer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
 }
 
 .grid--footer {
-  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
 }
 
 .logo-col {
   display: flex;
   flex-direction: column;
+}
+
+.logo-col .footer-description {
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1.6;
 }
 
 .footer-logo {
@@ -424,12 +566,16 @@
 .social-icon {
   height: 2.4rem;
   width: 2.4rem;
+  color: #fff;
+  background: #5b8af8;
+  padding: 1rem;
+  border-radius: 50%;
 }
 
 .copyright {
   font-size: 1.4rem;
   line-height: 1.6;
-  color: #767676;
+  color: #fff;
   margin-top: auto;
 }
 
@@ -456,15 +602,17 @@
   gap: 2.4rem;
 }
 
+.footer-link {
+}
 .footer-link:link,
 .footer-link:visited {
   text-decoration: none;
   font-size: 1.6rem;
-  color: #767676;
+  color: #fff;
   transition: all 0.3s;
 }
 
 .footer-link:hover,
 .footer-link:active {
-  color: #555;
+  color: #fff;
 }
