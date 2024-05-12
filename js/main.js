@@ -5,12 +5,12 @@ var swiper = new Swiper(".swiperPartner", {
   loop: true,
   centerSlide: "true",
   grabCursor: "true",
-  // autoplay: {
-  //   delay: 1500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
   pagination: {
-    el: ".swiper-pagination",
+        el: ".swiper-pagination1",
   },
 
   breakpoints: {
@@ -45,12 +45,12 @@ var swiperWorks = new Swiper(".swiperWorks", {
   loop: true,
   centerSlide: "true",
   grabCursor: "true",
-  // autoplay: {
-  //   delay: 1500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination2",
   },
 
   breakpoints: {
@@ -85,12 +85,12 @@ var swiperClients = new Swiper(".swiperClients", {
   loop: true,
   centerSlide: "true",
   // grabCursor: "true",
-  // autoplay: {
-  //   delay: 1500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination3",
   },
 
   breakpoints: {

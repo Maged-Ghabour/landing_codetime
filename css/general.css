@@ -422,6 +422,18 @@ strong {
   height: auto !important;
 }
 
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+  position: absolute;
+}
+
+@media(max-width:768px){
+  
+.swiper-pagination1{
+  display: none;
+}
+}
+
 .cta {
   background-color: #67c15e;
   text-decoration: none;
