@@ -228,6 +228,13 @@
   position: relative;
   padding-right: 2.5rem;
 }
+
+@media (max-width: 768px) {
+  .store-text-box ul li {
+    padding-right: 2.8rem;
+  }
+}
+
 .store-text-box ul li::after {
   content: "";
   background: url(../img/list-style.png);
@@ -237,6 +244,12 @@
   height: 20px;
   right: 0;
   top: 5px;
+}
+
+@media (max-width: 768px) {
+  .store-text-box ul li::after {
+    top: 1px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -598,19 +611,20 @@
 }
 
 .our__clients .client__card:hover {
-  background-color: #2667ff;
+  background-color: #9ccdfd;
   border-top: 5px solid #f79e0e;
   color: #fff;
+  box-shadow: 0 12px 12px #3572db29;
 }
 
 .our__clients .client__card:hover .client__header h6,
 .our__clients .client__card:hover .client__body p,
 .our__clients .client__card:hover .client__body a {
-  color: #fff;
+  color: #15398c;
 }
 
 .our__clients .client__card:hover .text-muted {
-  color: #ffffff63 !important;
+  /* color: #ffffff63 !important; */
 }
 /***********************************************/
 
@@ -650,18 +664,26 @@
 
 .accordion-body {
   font-size: 1.4rem;
+  line-height: 1.7;
 }
 
 /* FOOTER */
 /**************************/
 
 .footer {
-  padding: 12.8rem 0;
+  padding: 12.8rem 0 2rem;
   border-top: 1px solid #eee;
   background-image: url(../img/Footer.png);
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 6rem 1rem 2rem;
+  }
 }
 
 .grid--footer {
@@ -696,6 +718,16 @@
   gap: 2.4rem;
 }
 
+@media (max-width: 768px) {
+  .footer .logo-col {
+    text-align: center;
+  }
+
+  .social-links {
+    margin: 0 auto;
+  }
+}
+
 .social-icon {
   height: 2.4rem;
   width: 2.4rem;
@@ -703,6 +735,7 @@
   background: #5b8af8;
   padding: 1rem;
   border-radius: 50%;
+  margin-top: 1.5rem;
 }
 
 .copyright {
@@ -710,6 +743,8 @@
   line-height: 1.6;
   color: #fff;
   margin-top: auto;
+  padding-top: 2rem;
+  border-top: 1px solid #ffffff38;
 }
 
 .footer-heading {
@@ -749,6 +784,12 @@
   height: 2rem;
 }
 
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .footer-link:link,
 .footer-link:visited {
   text-decoration: none;
@@ -764,7 +805,7 @@
 
 /* Whatsapp  */
 .btn-whatsapp-pulse {
-  background: #25d366;
+  background: #198754;
   color: white;
   position: fixed;
   bottom: 2rem;

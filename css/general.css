@@ -437,8 +437,10 @@ strong {
 .cta::before {
   content: "";
   background: url(../img/whatsapp__icon.png);
-  width: 24px;
-  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 2.4rem;
+  height: 2.4rem;
   font-family: "FontAwesome";
   color: #fff !important;
   position: absolute;
