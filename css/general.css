@@ -427,7 +427,7 @@ strong {
   text-decoration: none;
   color: #fff;
   font-size: 1.4rem;
-  padding: 1.3rem 3.5rem 1.3rem 1.3rem;
+  padding: 1.3rem 5rem 1.3rem 1.5rem;
   border-radius: 0.5rem;
   display: inline-block;
   margin-top: 0.5rem;
@@ -443,7 +443,7 @@ strong {
   color: #fff !important;
   position: absolute;
   top: 20%;
-  right: 7px;
+  right: 1.3rem;
 }
 
 /* Animation */
@@ -496,7 +496,6 @@ strong {
   background: url(../img/dot.png);
   border-radius: 50%;
   opacity: 0.8;
-  pointer-events: none;
 }
 
 @keyframes fall {

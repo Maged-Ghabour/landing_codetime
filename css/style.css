@@ -26,6 +26,8 @@
   display: flex;
   align-items: center;
   gap: 4.8rem;
+  font-family: var(--main-font);
+  font-weight: bold;
 }
 
 .main-nav-link:link,
@@ -33,10 +35,8 @@
   display: inline-block;
   text-decoration: none;
   color: #102b6b;
-  font-weight: 500;
   font-size: 1.4rem;
   transition: all 0.3s;
-  font-weight: 600;
 }
 
 .main-nav-link:hover,
@@ -114,7 +114,7 @@
 }
 
 .hero-description {
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 1.92;
   margin-bottom: 4.8rem;
   font-family: var(--secondary-font);
@@ -166,7 +166,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
   border-radius: 2rem;
 }
 
@@ -248,6 +247,13 @@
   border-radius: 1rem 1rem 1rem 4rem;
   padding: 1.5rem;
   align-self: flex-start;
+  transition: all 1s;
+  user-select: none;
+}
+
+.project_execution_box:hover {
+  border: 1px solid #2667ff;
+  box-shadow: 0 12px 12px 0 #2667ff12;
 }
 
 .project_execution_box:nth-child(even) {
